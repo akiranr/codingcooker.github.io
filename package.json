@@ -1,0 +1,25 @@
+{
+  "name": "codingcooker.github.io",
+  "version": "1.0.0",
+  "description": "Project setup for personal site & blogging using GitHub Pages & Jekyll",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codingcooker/codingcooker.github.io.git"
+  },
+  "author": "Kiran Raj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codingcooker/codingcooker.github.io/issues"
+  },
+  "homepage": "https://github.com/codingcooker/codingcooker.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-sass": "^3.0.0"
+  }
+}

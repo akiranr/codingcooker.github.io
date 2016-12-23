@@ -1,3 +1,4 @@
 name: Kiran Raj
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+exclude: ["node_modules", "gulpfile.js", "package.json"]
