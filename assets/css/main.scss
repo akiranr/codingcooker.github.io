@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     height: 100%;
     overflow: hidden;
@@ -9,7 +14,12 @@ body {
     display: flex;
     height: 100%;
     flex-direction: column;
-    //overflow-y: scroll;
+
+    color: #212121;
+    font-family: "Helvetica Neue", "Calibri Light", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 0.02em;
 }
 
 nav {
@@ -25,7 +35,6 @@ img {
 }
 
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -43,11 +52,10 @@ a:hover {
 }
 h1 {
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 p {
     font-size: 1.5em;
-    line-height: 1.4em;
+    //line-height: 1.4em;
     color: #333;
 }
 footer {
@@ -87,17 +95,68 @@ ul.posts li {
         border: 1px solid black;
         display: flex;
         width: 100%;
-        .card
+        .box
             {
                 background: linear-gradient(to left, #E8CBC0 , #636FA4);
                 flex: 1;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                .box
+                .card
                 {
-                    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-                    transition: 0.3s;
+                    background: whitesmoke;
+                    border-radius: 5px;
+                    width: 200px;
+                    img {
+                        display: block;
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px;
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .card-details{
+                        margin: 5px 0;
+                        text-align: center;
+
+                        h3 {
+                            display: inline-block;
+                            border-bottom: 1px solid lightgrey;
+                        }
+                    }
+
+                    .social {
+                        color: #555;
+                        text-align: center;
+                        font-size: 1.5em;
+                        margin-top: 10px;
+                        i {
+                            margin: .2em;
+                            cursor: pointer;
+                            transition: color 300ms ease;
+                            //transform: translateZ(0);
+
+                            &:hover {
+                                margin-top: -1px;
+                            }
+
+                            &.fa-linkedin:hover{
+                                color: #007bb5;
+                            }
+                            &.fa-twitter:hover{
+                                color: #55acee;
+                            }
+                            &.fa-github:hover{
+                                color: black;
+                            }
+                            &.fa-envelope:hover{
+                                color: #F7B401;
+                            }
+                            &.fa-stack-overflow:hover{
+                                color: #ED780E;
+                            }                                                                                                                
+                        }
+                    }
                 }
             }
 
