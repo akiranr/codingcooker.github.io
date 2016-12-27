@@ -15,7 +15,8 @@ body {
     height: 100%;
     flex-direction: column;
 
-    color: #212121;
+    //color: #212121;
+    color: #404040;
     font-family: "Helvetica Neue", "Calibri Light", Roboto, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -92,7 +93,7 @@ ul.posts li {
     flex: 1;
     display: flex;
     section {
-        border: 1px solid black;
+        //border: 1px solid black;
         display: flex;
         width: 100%;
         .box
@@ -161,8 +162,34 @@ ul.posts li {
             }
 
             .content {
-                //background: lightpink;
+                margin: 10px;
                 flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: inherit;
+                flex-direction: column;
+                h1 {
+                    display: block;
+                }
+
+                h1:after{
+                    content: "";
+                    display: block;
+                    border: 1px solid darkred;
+                    width: 100%;
+                    margin-top: 10px;
+                }
             }
     }
+
+    @media (max-width: 700px) {
+    section {
+      flex-direction: column;  
+
+      .content {
+          flex: 0.6;
+      }
+    }
+}
 }
