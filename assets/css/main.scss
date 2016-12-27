@@ -41,16 +41,24 @@ nav ul, footer ul {
     font-weight: bold;
 }
 nav ul li, footer ul li {
-    display: inline;
+    display: inline-block;
     margin-right: 20px;
 }
 a {
     text-decoration: none;
     color: #999;
+    transition: all 0.5s ease;
 }
 a:hover {
-    text-decoration: underline;
+    border-bottom: 1px solid;
 }
+
+nav {
+    li.icon {
+        display: none;
+    }
+}
+
 h1 {
     font-size: 3em;
 }
@@ -96,6 +104,7 @@ ul.posts li {
         //border: 1px solid black;
         display: flex;
         width: 100%;
+        height: auto;
         .box
             {
                 background: linear-gradient(to left, #E8CBC0 , #636FA4);
@@ -186,10 +195,40 @@ ul.posts li {
     @media (max-width: 700px) {
     section {
       flex-direction: column;  
+      justify-content: space-between;
 
       .content {
-          flex: 0.6;
-      }
+          flex: 1;
+            }
+
+            .box {
+                flex: 2;
+            }
+        }
     }
 }
+
+@media (max-width: 700px) {
+nav ul li {
+            display: none;
+        }
+
+        nav li.icon {
+            display: inline-block;
+        }
+
+        img {
+            height: 80px;
+            width: auto;
+        }
+
+        html,body
+        {
+            min-height: 110%;
+            overflow: scroll;
+        }
+
+        footer{
+            flex: none;
+        }
 }
