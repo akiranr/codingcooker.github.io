@@ -4,6 +4,9 @@ var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
 
+var postcss = require("postcss")
+var customMedia = require("postcss-custom-media")
+
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -43,7 +46,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 gulp.task('sass', function () {
     return gulp.src('assets/css/main.scss')
         .pipe(sass({
-            includePaths: ['css'],
+            includePaths: ['css','_sass'],
             onError: browserSync.notify
         }))
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
@@ -58,6 +61,7 @@ gulp.task('sass', function () {
  */
 gulp.task('watch', function () {
     gulp.watch('assets/css/**/*', ['sass']);
+    gulp.watch('_sass/*', ['sass']);
     gulp.watch(['*.html', '_layouts/*.html','_posts/**/*.+(md|markdown|MD)', '_includes/*'], ['jekyll-rebuild']);
 });
 

@@ -1,37 +1,62 @@
 <!DOCTYPE html>
-	<html>
+	<html lang="en">
 		<head>
+
+			<!-- Basic Page Needs  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+			<meta charset="utf-8">
+			<meta http-equiv="x-ua-compatible" content="ie=edge">
 			<title>{{ page.title }}</title>
+			<meta name="description" content="">
+			<meta name="author" content="Kiran Raj">
+
+			<!-- Mobile Specific Metas –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 			<meta name="viewport" content="width=device-width, initial-scale=1">
-			<!-- link to main stylesheet -->
+
+			<!-- FONT
+			–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+			<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+			<!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+			<link rel="stylesheet" href="/assets/dist/css/normalize.css">
+			<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
 			<link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+
+			<!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 			<link rel="icon" type="image/png" href="codingcooker.png">
 		</head>
-		<body>
-			<nav>
-				<div class="logo">
-					<img src="/assets/img/logo.png" alt="CodingCooker">
+		<body class="Site">
+			<header class="Site-header">
+				<div class="Header Header--cozy" role="banner">
+					<div class="Header-titles">
+						<div class="logo">
+							<img src="/assets/img/logo.png" alt="CodingCooker">
+						</div>
+						<h1 class="Header-title">
+							Coding Cooker
+						</h1>
+						<h2 class="Header-subTitle">
+							Recipe's for modern web development
+						</h2>
+					</div>
+					<div class="Header-actions">
+						<a href="/">Home</a>
+						<a href="/about">About</a>
+						<a href="/cv">CV</a>
+						<a href="/blog">Blog</a>
+					</div>
 				</div>
-
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/cv">CV</a></li>
-	        		<li><a href="/blog">Blog</a></li>
-					<li class="icon"><a href="#"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></a></li>
-	    		</ul>
-			</nav>
-			<div class="container">
-			
-			{{ content }}
-			
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li><a href="mailto:kiranraj.anugula@gmail.com">email</a></li>
-	        		<li><a href="https://github.com/codingcooker">github.com/codingcooker</a></li>
-				</ul>
+			</header>
+			<main class="Site-content">
+				{{ content }}
+			</main>
+			<footer class="Site-footer">
+				<div class="Footer">
+					<div class="Footer-credit">
+						<a href="mailto:kiranraj.anugula@gmail.com">email</a>
+						<a href="https://github.com/codingcooker">github.com/codingcooker</a>
+					</div>					
+				</div>
 			</footer>
-		<script src="https://use.fontawesome.com/d7a7b893fb.js"></script>
+			<script src="https://use.fontawesome.com/d7a7b893fb.js"></script>
 		</body>
 	</html>

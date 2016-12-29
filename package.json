@@ -20,6 +20,9 @@
     "browser-sync": "^2.18.5",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
-    "gulp-sass": "^3.0.0"
+    "gulp-sass": "^3.0.0",
+    "highlight.js": "^9.9.0",
+    "postcss": "^5.2.8",
+    "postcss-custom-media": "^5.0.1"
   }
 }
