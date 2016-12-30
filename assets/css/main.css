@@ -2,7 +2,9 @@
 *::after,
 *::before {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
 
 html {
   height: 100%;
@@ -126,7 +128,8 @@ strong {
           flex: 1 0 auto;
   /* 2 */
   padding: var(--space) var(--space) 0;
-  width: 100%; }
+  width: 70%;
+  margin: auto; }
 
 .Site-content::after {
   content: '\00a0';
@@ -147,6 +150,60 @@ strong {
 
 .Site-content--full::after {
   content: none; }
+
+.box img {
+  display: block;
+  max-width: 100%;
+  -webkit-border-top-left-radius: 5px;
+          border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+          border-top-right-radius: 5px; }
+
+.social {
+  color: #555;
+  font-size: 1.5em; }
+  .social i {
+    margin: .2em;
+    cursor: pointer; }
+
+.card {
+  /* Add shadows to create the "card" effect */
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-border-radius: 5px;
+          border-radius: 5px; }
+  .card .name {
+    margin: 5px 0; }
+    .card .name:after {
+      content: "";
+      display: block;
+      border: 1px solid #555;
+      width: 30%;
+      margin: 5px auto; }
+  .card .title {
+    font-size: 0.75em; }
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
+
+@media only screen and (max-width: 48em) {
+  .Site-content .container-fluid {
+    padding: 0; }
+    .Site-content .container-fluid .center-xs {
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; }
+    .Site-content .container-fluid .social {
+      font-size: 1.25em; } }
 
 .Header {
   padding: 1.5em;
