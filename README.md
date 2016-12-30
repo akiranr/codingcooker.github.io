@@ -1,3 +1,3 @@
 ##
 
-Online presence with a collection of interesting articles!
+Blog on web development and more.
