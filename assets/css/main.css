@@ -102,33 +102,6 @@ strong {
   height: 100%;
   /* 1, 3 */ }
 
-.Home-Site {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100%;
-  /* 1, 3 */
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start; }
-
-.Site-main {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(85, 85, 85, 0.8)), to(rgba(0, 0, 0, 0.3))), url(/assets/img/mypic2.jpg) no-repeat center center fixed;
-  background: -webkit-linear-gradient(rgba(85, 85, 85, 0.8), rgba(0, 0, 0, 0.3)), url(/assets/img/mypic2.jpg) no-repeat center center fixed;
-  background: linear-gradient(rgba(85, 85, 85, 0.8), rgba(0, 0, 0, 0.3)), url(/assets/img/mypic2.jpg) no-repeat center center fixed;
-  background-size: cover; }
-
 .Site-header,
 .Site-footer {
   -webkit-box-flex: 0;
@@ -231,18 +204,6 @@ strong {
               justify-content: flex-start; }
     .Site-content .container-fluid .social {
       font-size: 1.25em; } }
-
-.home {
-  color: whitesmoke; }
-  .home h1 {
-    font-family: 'Fira Sans';
-    font-weight: 300;
-    font-size: 5em;
-    text-transform: uppercase;
-    margin-left: 2em;
-    margin-top: 4.5em;
-    letter-spacing: 0.5em;
-    color: #fff440; }
 
 .Header {
   padding: 1.5em;
@@ -381,3 +342,89 @@ strong {
   padding-bottom: 1px;
   color: #fff;
   margin: 10px; }
+
+.Home-Site {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(85, 85, 85, 0.8)), to(rgba(0, 0, 0, 0.3))), url(/assets/img/mypic2.jpg) no-repeat center center fixed;
+  background: -webkit-linear-gradient(rgba(85, 85, 85, 0.8), rgba(0, 0, 0, 0.3)), url(/assets/img/mypic2.jpg) no-repeat center center fixed;
+  background: linear-gradient(rgba(85, 85, 85, 0.8), rgba(0, 0, 0, 0.3)), url(/assets/img/mypic2.jpg) no-repeat center center fixed;
+  background-size: cover;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  /* 1, 3 */
+  color: #fff; }
+  .Home-Site header {
+    -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+            align-self: flex-end;
+    margin: 3em; }
+    .Home-Site header a:hover {
+      border-bottom: none; }
+    .Home-Site header .Home-Nav-Trigger {
+      background-color: lightyellow;
+      padding: 1.5em;
+      -webkit-border-radius: 20px;
+              border-radius: 20px; }
+  .Home-Site main {
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+                -ms-grid-row-align: center;
+            align-self: center; }
+
+.Home-Main h1 {
+  font-family: 'Fira Sans';
+  font-weight: 300;
+  font-size: 5em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  color: #fff440;
+  margin: 0; }
+
+.Home-Main p {
+  color: #e5e7e9;
+  font-family: 'Scope One';
+  font-style: italic;
+  letter-spacing: 0.1em;
+  font-size: 1.30em;
+  text-align: center;
+  line-height: 20px; }
+
+.overlay {
+  height: 100%;
+  width: 0;
+  z-index: 1;
+  /* Sit on top */
+  position: fixed;
+  /* Stay in place */
+  left: 0;
+  top: 0;
+  background-color: black;
+  /* Black fallback color */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px; }
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 25%;
+  /* 25% from the top */
+  width: 100%;
+  /* 100% width */
+  text-align: center;
+  /* Centered text/links */
+  margin-top: 30px;
+  /* 30px top margin to avoid conflict with the close button on smaller screens */ }
