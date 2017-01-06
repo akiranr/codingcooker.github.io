@@ -70,12 +70,16 @@ pre > code {
 }
 
 a {
+  color: #428bca;
+}
+
+.anchor-main {
   //border-bottom: 1px dashed hsla(150, 45%, 50%, 0.5);
   color: rgb(60,65,70);
   text-decoration: none;
 }
-a:focus,
-a:hover {
+.anchor-main:focus,
+.anchor-main:hover {
   border-bottom: 2px solid rgb(85,174,46);
 }
 

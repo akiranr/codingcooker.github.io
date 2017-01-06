@@ -104,6 +104,42 @@
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
+.posts {
+  li {
+    border: 1px solid transparent;
+    border-color: #ddd;
+    list-style: none;
+    border-radius: 2px;
+  }
+}
+
+  .post-date {
+    color: #777;
+    display: block;
+    font-size: 0.9em;
+  }
+
+  .post-title,
+  .post-excerpt,
+  .readmore {
+  margin: 0.5em;
+  }
+
+  .post-title {
+    a {
+      text-decoration: none;
+      color: #062961;
+      font-size: 1.5em;
+    }
+  }
+  .readmore{
+    a {
+      color: #ff6325;
+    }
+  }
+
+
+
 @media only screen and (max-width:48em)
 {
   .Site-content .container-fluid {
