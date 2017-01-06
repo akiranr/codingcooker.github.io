@@ -16,3 +16,4 @@ Design guidelines
 >- Correct typography on all devices
 >- Minimal css & js
 >- Basic SEO - html5 best practices
+>- Managing data files - images
