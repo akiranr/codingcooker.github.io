@@ -58,11 +58,14 @@ pre > code {
   color: inherit; }
 
 a {
+  color: #428bca; }
+
+.anchor-main {
   color: #3c4146;
   text-decoration: none; }
 
-a:focus,
-a:hover {
+.anchor-main:focus,
+.anchor-main:hover {
   border-bottom: 2px solid #55ae2e; }
 
 ol,
@@ -189,6 +192,31 @@ strong {
 .card:hover {
   -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); }
+
+.posts li {
+  border: 1px solid transparent;
+  border-color: #ddd;
+  list-style: none;
+  -webkit-border-radius: 2px;
+          border-radius: 2px; }
+
+.post-date {
+  color: #777;
+  display: block;
+  font-size: 0.9em; }
+
+.post-title,
+.post-excerpt,
+.readmore {
+  margin: 0.5em; }
+
+.post-title a {
+  text-decoration: none;
+  color: #062961;
+  font-size: 1.5em; }
+
+.readmore a {
+  color: #ff6325; }
 
 @media only screen and (max-width: 48em) {
   .Site-content .container-fluid {
@@ -348,10 +376,10 @@ strong {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(85, 85, 85, 0.8)), to(rgba(0, 0, 0, 0.3))), url(/assets/img/mypic2.jpg) no-repeat center center fixed;
-  background: -webkit-linear-gradient(rgba(85, 85, 85, 0.8), rgba(0, 0, 0, 0.3)), url(/assets/img/mypic2.jpg) no-repeat center center fixed;
-  background: linear-gradient(rgba(85, 85, 85, 0.8), rgba(0, 0, 0, 0.3)), url(/assets/img/mypic2.jpg) no-repeat center center fixed;
-  background-size: cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(85, 85, 85, 0.8)), to(rgba(0, 0, 0, 0.3))), url(/assets/img/mypic3.jpg) no-repeat center center fixed;
+  background: -webkit-linear-gradient(rgba(85, 85, 85, 0.8), rgba(0, 0, 0, 0.3)), url(/assets/img/mypic3.jpg) no-repeat center center fixed;
+  background: linear-gradient(rgba(85, 85, 85, 0.8), rgba(0, 0, 0, 0.3)), url(/assets/img/mypic3.jpg) no-repeat center center fixed;
+  background-size: contain;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -388,7 +416,7 @@ strong {
   margin: 0; }
 
 .Home-Main p {
-  color: #e5e7e9;
+  color: #555;
   font-family: 'Scope One';
   font-style: italic;
   letter-spacing: 0.1em;
@@ -428,3 +456,11 @@ strong {
   /* Centered text/links */
   margin-top: 30px;
   /* 30px top margin to avoid conflict with the close button on smaller screens */ }
+
+.bg-orange {
+  background-color: lightsalmon;
+  padding: 2px; }
+
+.bg-pink {
+  background-color: hotpink;
+  padding: 2px; }
