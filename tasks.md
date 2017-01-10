@@ -12,8 +12,10 @@ Tasks
 Design guidelines
 =
 
->- Responsive
->- Correct typography on all devices
+>- Responsive - sass mixins
+>- Start with grayscale & one color ( Keep It simple and minimal )
+>- Experiment with lettering.js for Blog title
+>- Correct typography on all devices - check fluid typography guidelines
 >- Minimal css & js
 >- Basic SEO - html5 best practices
 >- Managing data files - images

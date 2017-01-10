@@ -2,21 +2,22 @@
 layout: default
 title: Coding Cooker | Web development, programming and outrageous philosopy!
 ---
-<h1></h1>
-	<ul class="posts">
 
+<section class="posts">
+    <h1>Latest Blog posts</h1>
 	  {% for post in site.posts %}
-	    <li>
-            <p class="post-title">
-                    <a href="{{ post.url }}.html" title="{{ post.title }}">{{ post.title }}</a>
-                <span class="post-date"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date_to_string }}</span>
-            </p> 
+	    <article>
+            <h2 class="post-title">
+                <a href="{{ post.url }}.html" title="{{ post.title }}">{{ post.title }}</a>
+            </h2>
+            <span class="post-date"><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date_to_string }}</span>
             <p class="post-excerpt">
-                {{ post.excerpt | remove: '<p>' | | remove: '</p>'}}
+                {{ post.excerpt | remove: '<p>' | remove: '</p>'}}
             </p>
             <p class="readmore">
                 <a href="{{ post.url }}.html" class="button">Read more <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
             </p>
-        </li>
+        </article>
 	  {% endfor %}
-	</ul>
+</section>
+

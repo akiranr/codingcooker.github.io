@@ -1,0 +1,39 @@
+.posts {
+  article {
+    border: 1px solid transparent;
+    border-color: #ddd;
+    list-style: none;
+    border-radius: 2px;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+  }
+}
+
+.post {
+  margin: 0.5em 0;
+}
+
+.post-date {
+  color: #777;
+  display: block;
+  font-size: 0.9em;
+}
+
+.post-title,
+.post-excerpt,
+.readmore {
+  margin-bottom: 1em;
+}
+
+.post-title {
+  a {
+    text-decoration: none;
+    color: inherit;
+    //font-size: 1.5em;
+  }
+}
+.readmore{
+  a {
+    color: $primary-color;
+  }
+}

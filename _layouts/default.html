@@ -14,11 +14,12 @@
 
 			<!-- FONT
 			–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-			<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+			<link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+			<link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic" rel="stylesheet">
 
 			<!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 			<link rel="stylesheet" href="/assets/dist/css/normalize.css">
-			<link rel="stylesheet" href="/assets/css/flexboxgrid.min.css" type="text/css" >
+			<!--<link rel="stylesheet" href="/assets/css/flexboxgrid.min.css" type="text/css" >-->
 			<link rel="stylesheet" type="text/css" href="/assets/css/main.css">
 
 			<!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -26,26 +27,28 @@
 		</head>
 		<body class="Site">
 			<header class="Site-header">
-				<div class="Header Header--cozy" role="banner">
-					<div class="Header-titles">
+				<nav role="banner">
+					<div class="nav-titles">
 						<div class="logo">
 							<img src="/assets/img/logo.png" alt="CodingCooker">
 						</div>
-						<h1 class="Header-title">
-							Coding Cooker
-						</h1>
-						<h2 class="Header-subTitle">
-							Recipe's for modern web development
-						</h2>
+						<div class="nav-site-name">
+							<h1 class="nav-title">
+								Coding Cooker
+							</h1>
+							<h2 class="nav-subtitle">
+								Recipe's for modern web development
+							</h2>							
+						</div>
 					</div>
-					<div class="Header-actions">
+					<div class="nav-actions">
 						<a href="/" class="anchor-main">Home</a>
 						<a href="/about" class="anchor-main">About</a>
 						<a href="/cv" class="anchor-main">CV</a>
 					</div>
-				</div>
+				</nav>
 			</header>
-			<main class="Site-content">
+			<main class="Site-content" role="main">
 				{{ content }}
 			</main>
 			<footer class="Site-footer">
