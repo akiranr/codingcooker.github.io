@@ -12,6 +12,20 @@ nav {
           margin: 0;
           text-align: center;
           line-height: 1.1em;
+
+          a {
+              text-decoration: none;
+              color: inherit;
+          }
+
+          .bg {
+              display: inline-block;
+              //transform: skew(20deg,20deg);
+              //transform: scale(-1,1);
+              transform: rotate(-10deg);
+              color: $primary-color;
+              text-shadow: 3px 3px 2px #000;
+          }
       }
 
       .nav-subtitle {
