@@ -4,9 +4,9 @@ title: Coding Cooker | Recipe's for modern web development
 ---
 
 <section class="posts">
-    <h1>Latest Blog posts</h1>
+    <h1>Posts</h1>
 	  {% for post in site.posts %}
-	    <article>
+	    <article class="article-excerpt">
             <h2 class="post-title">
                 <a href="{{ post.url }}.html" title="{{ post.title }}">{{ post.title }}</a>
             </h2>

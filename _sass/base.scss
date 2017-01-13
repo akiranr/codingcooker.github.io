@@ -14,20 +14,21 @@ body {
   color: $body-color;
   font-family: $body-font;
   text-rendering: optimizeLegibility;
-  font-size: 18px;
-  line-height: 1.45;
+  font-size: 20px;
+  line-height: 1.5;
   font-weight: normal;
 }
 
 @media only screen and (max-width: 45em){
   body {
-    font-size: 16px;
+    font-size: 17px;
   }
 }
 
 h1,h2,h3,h4,h5,h6{
   font-family: $heading-font;
   color: $heading-color;
+  font-weight: 400;
 }
 
 footer {

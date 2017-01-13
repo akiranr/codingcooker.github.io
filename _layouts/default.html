@@ -1,64 +1,12 @@
 <!DOCTYPE html>
-	<html lang="en">
-		<head>
-
-			<!-- Basic Page Needs  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-			<meta charset="utf-8">
-			<meta http-equiv="x-ua-compatible" content="ie=edge">
-			<title>{{ page.title }}</title>
-			<meta name="description" content="">
-			<meta name="author" content="Kiran Raj">
-
-			<!-- Mobile Specific Metas –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-			<meta name="viewport" content="width=device-width, initial-scale=1">
-
-			<!-- FONT
-			–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-			<link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
-			<link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic" rel="stylesheet">
-
-			<!-- CSS –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-			<link rel="stylesheet" href="/assets/dist/css/normalize.css">
-			<!--<link rel="stylesheet" href="/assets/css/flexboxgrid.min.css" type="text/css" >-->
-			<link rel="stylesheet" type="text/css" href="/assets/css/main.css">
-
-			<!-- Favicon –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-			<link rel="icon" type="image/png" href="codingcooker.png">
-		</head>
-		<body class="Site">
-			<header class="Site-header">
-				<nav role="banner">
-					<div class="nav-titles">
-						<div class="logo">
-							<img src="/assets/img/logo.png" alt="CodingCooker">
-						</div>
-						<div class="nav-site-name">
-							<h1 class="nav-title">
-								<a href="/"><span class="bg">C</span>oding <span class="bg">C</span>ooker</a>
-							</h1>
-							<h2 class="nav-subtitle">
-								Recipe's for modern web development
-							</h2>							
-						</div>
-					</div>
-					<div class="nav-actions">
-						<a href="/" class="anchor-main">Home</a>
-						<a href="/about" class="anchor-main">About</a>
-						<a href="/cv" class="anchor-main">CV</a>
-					</div>
-				</nav>
-			</header>
-			<main class="Site-content" role="main">
-				{{ content }}
-			</main>
-			<footer class="Site-footer">
-				<div class="Footer">
-					<div class="Footer-credit">
-						<a href="mailto:kiranraj.anugula@gmail.com" class="anchor-main">email</a>
-						<a href="https://github.com/codingcooker" class="anchor-main">github.com/codingcooker</a>
-					</div>					
-				</div>
-			</footer>
-			<script src="https://use.fontawesome.com/d7a7b893fb.js"></script>
-		</body>
-	</html>
+<html lang="en">
+	{% include head.html %}
+	<body class="Site">
+		{% include header.html %}
+		<main class="Site-content" role="main">
+			{{ content }}
+		</main>
+		{% include footer.html %}
+		<script src="https://use.fontawesome.com/d7a7b893fb.js"></script>
+	</body>
+</html>
