@@ -35,7 +35,7 @@
     &:after {
       content: '';
       display: block;
-      border-bottom: 0.1em solid $heading-color;
+      border-bottom: 0.1em solid $hover-color;
       transform: scaleX(0);
       transition: transform 250ms ease-in-out;
       transform-origin: 0% 50%;
@@ -48,7 +48,7 @@
 }
 .readmore{
   a {
-    color: $primary-color;
+    color: $hover-color;
     text-decoration: none;
   }
 }
