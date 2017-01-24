@@ -48,7 +48,7 @@
 }
 .readmore{
   a {
-    color: $hover-color;
+    color: #333;
     text-decoration: none;
   }
 }
@@ -56,4 +56,11 @@
 .article-excerpt:hover,
 .article-excerpt:active {
   background: $main-gradient;//#fcfcfc
+}
+
+.button {
+  //border: 1px solid red;
+  padding: 0.2em;
+  background-color: #fbe404;
+  border-radius: 0.2em;
 }
