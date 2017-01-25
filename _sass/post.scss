@@ -17,9 +17,10 @@
   color: #777;
   display: block;
   font-size: 0.9em;
+  margin-bottom: 1em;
 }
 
-.post-title,
+//.post-title,
 .post-excerpt,
 .readmore {
   margin-bottom: 1em;
@@ -63,4 +64,13 @@
   padding: 0.2em;
   background-color: #fcec4f;
   border-radius: 0.2em;
+}
+
+blockquote {
+  margin: 1em 0;
+  font-family: 'Merriweather', serif;
+  font-size: 0.8em;
+  background-color: #fcec4f;
+  padding: 1em;
+  border-radius: 1em;
 }
