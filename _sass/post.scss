@@ -74,3 +74,18 @@ blockquote {
   padding: 1em;
   border-radius: 1em;
 }
+
+figure {
+  margin: 0 0 1em 0;
+  text-align: center;
+  img
+  {
+    width: 300px;
+    height: auto;
+  }
+  figcaption {
+    font-family: 'Merriweather', serif;
+    font-size: 0.8em;
+    text-align: center;
+  }
+}
